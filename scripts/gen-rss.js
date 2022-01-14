@@ -3,6 +3,8 @@ const path = require('path')
 const RSS = require('rss')
 const matter = require('gray-matter')
 
+// add comment to trigger workflow
+
 async function generate() {
   const feed = new RSS({
     title: 'Amaan Gokak',
