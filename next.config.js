@@ -6,9 +6,12 @@ const ghPages = process.env.DEPLOY_TARGET === 'gh-pages'
 
 module.exports = withPlugins([
   [
-    optimizedImages,
+    optimizedImages(),
     {
-      imagesPublicPath: '/amaan18.github.io/_next/static/images/'
+      images: {
+        loader: 'custom',
+        disableStaticImages: true
+      }
     }
   ],
   {
