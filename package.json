@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "export": "DEPLOY_TARGET=gh-pages next export"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
