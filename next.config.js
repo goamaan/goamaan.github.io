@@ -4,10 +4,15 @@ const optimizedImages = require('next-optimized-images')
 
 module.exports = withPlugins([
   [
-    optimizedImages(),
+    optimizedImages,
     {
-      /* config for next-optimized-images */
+      imagesPublicPath: '/_next/static/images/'
     }
   ],
+  {
+    basePath: '/',
+    assetPrefix: '/',
+    env
+  },
   withNextra()
 ])
