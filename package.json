@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "node ./scripts/gen-rss.js && next build",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
@@ -17,8 +17,7 @@
     "nextra": "^1.1.0",
     "nextra-theme-blog": "^0.1.6",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "rss": "^1.2.2"
+    "react-dom": "^17.0.2"
   },
   "prettier": {
     "arrowParens": "always",
