@@ -6,13 +6,12 @@ module.exports = withPlugins([
   [
     optimizedImages,
     {
-      imagesPublicPath: '/_next/static/images/'
+      imagesPublicPath: '/amaan18.github.io/_next/static/images/'
     }
   ],
   {
-    basePath: '/',
-    assetPrefix: '/',
-    env
+    basePath: '/amaan18.github.io',
+    assetPrefix: '/amaan18.github.io/'
   },
   withNextra()
 ])
